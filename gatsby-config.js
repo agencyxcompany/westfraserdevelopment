@@ -1,6 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'West Fraser Developments',
   },
-  plugins: ['gatsby-plugin-react-helmet'],
+plugins: [
+  {
+    resolve: `gatsby-plugin-typography`,
+    options: {
+      pathToConfigModule: `src/utils/typography.js`,
+    },
+  },
+],
 }
